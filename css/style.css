@@ -1,0 +1,289 @@
+@font-face {
+    font-family:"Honey";
+    src:url("../fonts/HoneyScript-Light.eot?") format("eot"),
+    url("../fonts/HoneyScript-Light.woff") format("woff"),
+    url("../fonts/HoneyScript-Light.ttf") format("truetype"),
+    url("../fonts/HoneyScript-Light.svg#HoneyScript-Light") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:"appleberry";
+    src:url("../fonts/appleberry.eot?") format("eot"),
+    url("../fonts/appleberry.woff") format("woff"),
+    url("../fonts/appleberry.ttf") format("truetype"),
+    url("../fonts/appleberry.svg#appleberry") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("../img/black_scales.png");
+    overflow-x: hidden;
+    trasition: all 5s linear !important;
+    -webkit-trasition: all 5s linear !important;
+}
+#logo{
+    top:0;
+    position: absolute;
+    width: 100%;
+    font-size: 120px;
+    text-align: center;
+    color: white;
+    font-family: "Honey";
+}
+.bar{
+    margin: 10% 5% 0% 5%;
+    border-radius: 0;
+    trasition: all 5s linear !important;
+    -webkit-trasition: all 5s linear !important;
+}
+.navbar, .navbar-default, .container{
+    padding: 0 !important;
+    trasition: all 5s linear !important;
+    -webkit-trasition: all 5s linear !important;
+}
+.container{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.bar ul{
+    list-style: none;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+
+}
+.bar ul li{
+    margin: 0 0px 0 0px;
+    border-right: solid #d4d4d4 1px;
+    width: 170px;
+    padding-top: 15px;
+    height: 100% !important;
+    text-align: center;
+}
+#demo{
+    position: absolute;
+    right: 0;
+    background-color: #512266;
+    border: none;
+    color: white !important;
+}
+
+#down{
+    position: absolute;
+    right: 173px;
+    background-color: #37a44c;
+    border: none;
+}
+#down a{
+    padding: 0;
+    color:black;
+}
+#down a:hover{
+    color:white;
+}
+.bar ul li:hover{
+    background-color: #512266;
+    color: #ffffff !important;
+    cursor: pointer;
+}
+.panel{
+    width: 300px;
+}
+#block-content{
+    margin: 5% 0 0 23%;
+    padding: 30px 0 0 0;
+    position: absolute;
+    width: 500px;
+    z-index: 2000 !important;
+    height: 150px;
+    display: none;
+    border:1px black solid;
+    border-radius: 4px 4px 4px 80px;
+    box-shadow: 0 0 3px 0 black;
+    background-color: #ffffff;
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+}
+#btn-speech{
+    width: 150px;
+    height: 150px;
+    background-color: #512266;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    box-shadow: 0 0 10px 0 black;
+    cursor: pointer;
+}
+#btn-speech i{
+    text-align: center;
+    text-indent: 20px;
+    padding-top: 20px;
+    font-size: 3cm;
+    color:white;
+}
+#block-content p{
+    width: 70%;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    text-align: center;
+}
+#slide {
+    width: 92%;
+    overflow: hidden;
+    height: 400px;
+    margin: 5px auto;
+    box-shadow: 0 0 0 #000;
+    position: relative;
+
+}
+.content-description{
+    padding: 0 60px 0 60px;
+    font-size: 17px;
+}
+.pos-center{
+    padding: 10% 0 0 0 !important;
+}
+#slide img {
+    width: 130%;
+    height: 150%;
+    margin: -10% -20%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    left: 0;
+    opacity: 0.7;
+}
+#slide p {
+    z-index:2;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    border-radius: 4px 4px 4px 40px;
+    height: 150px;
+    width: 30%;
+    padding: 30px;
+    font-family: "honey";
+    text-align: center;
+    font-size: 38px;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+}
+.box{
+    width: 92%;
+    overflow: hidden;
+    height: auto;
+    margin: 65px auto;
+    box-shadow: 0 0 0px #fff;
+    position: relative;
+    padding: 3%;
+}
+.box>p{
+    color: #ffffff;
+    text-align: center;
+    font-family: "honey";
+    font-size: 80px;
+    text-decoration: underline;
+}
+.box > .box-content p:first-child{
+    color: #000;
+    text-align: center;
+    font-family: "honey";
+    font-size: 60px;
+}
+.box-content-larg , .box-content-larg ul{
+    width: 97.25% !important;
+    height: 550px !important;
+    list-style: none !important;
+    text-align: justify;
+    min-width: 200px !important;
+    min-height: 150px !important;
+}
+.box-content{
+    width: 48%;
+    left: auto;
+    overflow: hidden;
+    height: 500px;
+    margin: 5px 5px;
+    background-color:#fff;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    text-align: justify;
+    font-size: 16;
+    border-radius: 4px;
+    min-width: 300px !important;
+    min-height: 150px !important;
+}
+
+.box-content ul{
+    list-style: decimal;
+    margin: 30px 30px;
+}
+.box-content li{
+    margin-top: 5px;
+}
+footer{
+    display:inline;
+    width: 100%;
+    position: absolute;
+    height: 600px;
+    text-align: center;
+    color:white;
+    background-color: #1c1c1c;
+    margin: -15px !important;
+}
+#copyright{
+    left:0;
+    width: 60% !important;
+    background-color: transparent !important;
+    font-size: 18px;
+    text-align: left;
+    padding:  0 50px;
+
+}
+.img-git, #copyright{
+    position: absolute;
+    background-color: rgba(255,255,255,0.7);
+    right: 0;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+}
+.img-git p{
+    font-size: 50px;
+    font-family: Honey;
+}
+.img-git img{
+    margin: 30% 0 0 0;
+    width: 50%;
+}
+#copyright ul{
+    padding: 0 0 0 50px;
+    list-style: hiragana-iroha;
+}
+.titulo-apresentacao{
+    font-family: 'Honey';
+    font-size: 90px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.telapreta{
+    position:fixed !important;
+    top:0;
+    left:0;
+    z-index:40;
+    width: 100%;
+    height:100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+}

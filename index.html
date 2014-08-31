@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>HVoiceJS</title>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+
+    </head>
+    <body>
+        <div id="logo">HVoiceJS - <span style="font-size: 70px;font-family: arial, helvetica, sans-serif">BETA</span></div>
+        <nav class="navbar navbar-default bar" role="navigation">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li id="home">Home</li>
+                    <li id="conheca">Conheça o HVoiceJS</li>
+                    <li id="document">Documentação</li>
+                    <li>Contato</li>
+                    <li id="demo" class="startVoice">DEMO</li>
+                    <li id="down"><a href="hvoicejs.beta.v0.01.zip">Download</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="col-lg-12 content">
+            <div class="container">   <!-- demostração -->
+                <div class="telapreta"></div>
+                <div id="block-content">
+                    <div id="btn-speech"><i class="glyphicon glyphicon-volume-up"></i></div>
+                    <p>Diga "Começar" para iniciar a DEMO <br/>(Clique em permitir para ativar o microphone)</p>
+                </div>
+            </div>
+
+            <figure id="slide">
+                <img src="img/img3.jpg" alt="De comandos de voz para seu site e veja ele responder.">
+                <img src="img/img5.jpg" alt="Veja como é simples de te-lo funcionando.">
+                <img src="img/img7.jpg" alt="Multiplas ações por voz no site e simples de instalar e configurar.">
+                <img src="img/img8.jpg" alt="Simples de usar, comodo e interessante.">
+            </figure>
+            <div class="box">
+                <div class="box-content box-content-larg pos-center">
+                    <p>O que é? e para que serve o HVoiceJS?</p>
+                    <div class="content-description">
+                        O Hvoice é um sistema para dar suporte de voz ao seu site/sistema. Com ele é possivel
+                        manipular todo o site/sistema por simples comandos de voz, essa API ainda permite que
+                        o usuário administrador configure os comandos, ou seja, o administrados do site pode
+                        criar novas funções javascript para qualquer coisa no site e executa-las por comandos
+                        de voz. O HvoiceJS tem varias aplicações e pode ser usado para qualquer tipo de site/sistema.
+                        A API é simples e facil de ser instalado, basta apenas colocar 2 links e uma classe e pronto! <<a href="#documentacao">Clique aqui para ver mais!</a>>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <p id="documentacao">Documentação</p>
+                <div class="box-content">
+                    <p>Instatação</p>
+                    <p>
+                        Veja como é facil e simples a instalação do HVoiceJS em alguns passos e aplicação esta pronta para ser usada!
+                    </p>
+                    <ul>
+                        <li>Faça download.</li>
+                        <li>Descompacte o HVoice.v1.js.rar no diretorio raiz da sua aplicação.</li>
+                        <li>Na sua pagina raiz (index.php ou .html) coloque o link chamando os arquivos externos hvoice.js e terms.js que estão dentro da pasta descompactada</li>
+                        <li>No seu site coloque a clase reservado do HVoiceJS "<span style="color:blue">.startVoice</span>"</li>
+                        <li>Entre no index.php na pasta que foi descompactada, para acessar o menu de administração do plugin.</li>
+                        <li>Agora é só configurar e pronto! </li>
+                    </ul>
+                </div>
+                <div class="box-content">
+                    <p>Regras de Bom Funcionamento</p>
+                    <p>
+                        para que o sistema funcione de forma melhor e fique atento a algumas considerações na hora de definir quais termos vão ser
+                        utilizados para determinadas ações do site.
+                    </p>
+                    <ul>
+                        <li>Não coloque termos complicados de serem prenunciados (pense na dicção dos usuários).</li>
+                        <li>Defina os termos de acordo com as ações que seram aplicadas (termos bem objetivos).</li>
+                        <li>Por perferência não coloque os termos com uma palavra só, tente colocar termos com mais de uma palavra para ter menos risco de conflito.</li>
+                        <li>Informa aos usuários quais ois termos que eles podem usar no site (um mini tour).</li>
+                        <li>Por padrão os termos devem ser feitos em português, mas nas próximas versões seram disponiveis varias linguas.</li>
+                    </ul>
+                </div>
+
+                <div class=" box-content box-content-larg">
+                    <p>Configurações</p>
+                    <p>
+                        As configurações no HVoiceJS são bem simples, você nunca imaginou uma coisa tão simples de
+                        configurar e de se instalar. A configuração do HVoiceJS ADM possue dois modos, o básico e o avançado.
+                         Conheça agora!
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Modo Básico</p>
+                            <p>
+                                No modo básico qual quer pessoa sem conhecimentos em programação
+                                pode configurar o HVoiceJS, é bem simples e intuitivo. Para adicionar
+                                uma nova ação ao site basta clicar na ação que deseje que o site faça
+                                e em seguida informe o termo que servirá para o sistema ser ativado e por final
+                                clique em salvar.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Modo Avançado</p>
+                            <p>
+                                Este modo é para usuarios mais experientes em programação com javascript/jQuery.
+                                mas não é tão complicado como parece. primeiro informe o termo que servirá de "gatilho"
+                                e depois informe uma descrição minima sobre o termo e o que ele é responsável, em seguida
+                                escreva uma função em javascript/jQuery que será execultada quando o termo for chamado no site, e por
+                                fim salve.
+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer>
+                <div id="copyright">
+                    <p class="titulo-apresentacao"> Relatório do Projeto</p>
+                    <p>Equipe: Joerverson Santos</p>
+                    <p>Tecnologias usadas para o desenvolvimento</p>
+                    <ul>
+                        <li>jQuery</li>
+                        <li>Speech API</li>
+                        <li>Bootstrap</li>
+                        <li>ajax</li>
+                        <li>php</li>
+                    </ul>
+                </div>
+                <div class="img-git">
+                    <img src="img/git.png" alt=""/>
+                    <p><a href="https://github.com/Joeverson">https://github.com/Joeverson</a></p>
+                </div>
+            </footer>
+        </section>
+
+
+
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.slides.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="HVoiceJS/terms.js"></script>
+        <script src="HVoiceJS/HVoice.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#slide img:eq(0)").addClass("ativo").show();
+
+                var texto = $(".ativo").attr("alt");
+                $("#slide").prepend("<p>"+texto+"</p>");
+
+                setInterval(slide,4000);
+
+                function slide(){
+                    if($(".ativo").next().size()){
+                        var a = Math.floor(Math.random()*4);
+                        $(".ativo").slideUp().removeClass("ativo");
+                        $("#slide img:eq("+a+")").fadeIn().addClass("ativo");
+                    }else{
+                        $(".ativo").fadeOut().removeClass("ativo");
+                        $("#slide img:eq(0)").fadeIn().addClass("ativo");
+                    }
+                    var texto = $(".ativo").attr("alt");
+                    $("#slide p").hide().html(texto).delay(500).fadeIn();
+                }
+
+
+                $("#document").on("click",function(){
+                    window.scrollTo(0,1094);
+                });
+
+                $("#conheca").on("click",function(){
+                    window.scrollTo(0,430);
+                });
+
+                $("#home").on("click",function(){
+                    window.scrollTo(0,0);
+                });
+
+                $( document ).scroll(function() {
+                    if($("body").scrollTop() >= 430){
+                        $("nav").css({position:"fixed", margin: "0% 0% 0% 0%", zIndex:"30",width:'100%'});
+                    }else{
+                        $("nav").css({position:"relative", margin: "10% 5% 0% 5%", zIndex:"30", width:'90%'});
+                    }
+                });
+
+                $("#demo, .telapreta").on("click",function(){
+                   $("#block-content").fadeToggle();
+                   $(".telapreta").fadeToggle()
+
+                });
+
+            })
+        </script>
+    </body>
+</html>
